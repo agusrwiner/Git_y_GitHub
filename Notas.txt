@@ -1,13 +1,45 @@
 1- Iniciar el repositorio de codigo
     Click derecho sobre el proyecto -> Git Bash Here
+
 2- 'Activar' el uso de Git en el proyecto
     "git init" + enter
 
-Comandos:
-    git status: muestra el estado de nuestros archivos
-    git add <nameOfFile>: agrega un archivo al 'Staging area'
-
 3- Configurar el primer Snapshot
-    'git commit': crea un punto de control de codigo
+    'git commit': crea un punto de control de codigo (no te va a dejar si no esta hecho lo de las lineas de abajo)
     'git config --global user.email "unMail@gmail.com"': configura el email
     'git config --global user.name "nombreUsuario"': configura el nombre
+    'git commit': ahora te deberia dejar
+    'Insertas un nombre para el guardado' -> <escape> -> ':wq'
+
+    forma rapida: 'git commit -m "nombreDelGuardado"'
+
+4- Consultar Versiones
+    'git log': muestra los datos de los commits realizados
+
+5- Crear versiones alternativas
+    'git branch': muestra todas las versiones
+    'git branch <versionName>': crear nueva version
+
+6- Navegar entre las distintas versiones
+    'git checkout <versionName>': cambia a la version deseada
+
+7- AGREGAR A REPOSITORIO DE GITHUB
+    una vez creas el repositorio, copias la linea: 'git remote add origin https://github.com/agusrwiner/Git_y_GitHub.git'
+    luego la siguiente: 'git push -u origin master'
+
+Comandos:
+    git status: muestra el estado de nuestros archivos
+    git add <nameOfFile>: agrega un archivo al 'Staging area' (poniendo un punto como nombre agregas todos)
+    git checkout -- <fileName>: restaura la version anterior del archivo seleccionado
+    git diff <fileName>: muestra las diferencias entre las versiones del archivo
+
+- Crear carpeta que git ignora:
+    se debe llamar a la carpeta: '.gitignore'
+    dentro de la carpeta escribir los nombres de los archivos que desea ignorar
+
+
+
+
+
+
+/**/
